@@ -11,13 +11,12 @@ test.describe('Face matching: upload photo in Compare', function () {
     try {
         await expect(cookibunner).toBeHidden(); 
     } catch (e) {
-        console.log('Баннер не появился за 5 секунд, продолжаем тест без клика');
+        console.log('The banner did not appear in 5 seconds, we continue the test without clicking');
     }
 });
 
-    test('проверка загрузки фотки в табе Face matching', async ({ page }) => {
+    test('Checking the photo upload in the Face matching tab', async ({ page }) => {
     
-  //проверить отобпражение таба Face matching
   const faceMatchingTab = page.locator('nav').getByText('Face matching').first();
   await expect(faceMatchingTab).toBeVisible();
   await faceMatchingTab.click();
@@ -30,7 +29,7 @@ test.describe('Face matching: upload photo in Compare', function () {
         await expect(confirmBtn).toBeVisible();
         await confirmBtn.click();
     } catch (e) {
-        console.log('файл не был загружен');
+        console.log('you didnt click on Confirm');
     }
     
 
@@ -39,14 +38,13 @@ test.describe('Face matching: upload photo in Compare', function () {
     const filePath = path.resolve(__dirname, '../fixtures/woman_face.png');
     await fileChooser.setFiles(filePath);
     
-    //await expect(page.getByRole('img', { name: /woman_face\.png$/ })).toBeVisible({ timeout: 15000 });
     
     const uploadedImage = page.locator('img[alt$="woman_face.png"]');
     await expect(uploadedImage).toBeVisible();
 });
 
 
-test('проверка загрузок одинаковых фоток в табе Face matching', async ({ page }) => {
+test('Checking uploads of identical photos in the Face matching tab', async ({ page }) => {
     
   const faceMatchingTab = page.locator('nav').getByText('Face matching').first();
   await expect(faceMatchingTab).toBeVisible();
@@ -73,7 +71,7 @@ test('проверка загрузок одинаковых фоток в та�
         await expect(confirmBtn).toBeVisible();
         await confirmBtn.click();
     } catch (e) {
-        console.log('файл не был загружен');
+        console.log('you didnt click on Confirm');
     }
     const fileChooser2 = await fileChooserPromise2;
     const filePath2 = path.resolve(__dirname, '../fixtures/woman_face.png');

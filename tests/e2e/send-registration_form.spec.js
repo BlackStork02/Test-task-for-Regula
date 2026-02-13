@@ -15,7 +15,7 @@ test.describe('Face matching: upload photo in Compare', function () {
     }
 });
 
-    test('проверка отправки формы регистрации через кнопку Get in Touch', async ({ page }) => {
+    test('Checking the submission of the registration form via the Get in Touch button', async ({ page }) => {
     const form = page.locator('form.hs-form');
     await form.waitFor({ state: 'visible' });
     await form.locator('input[name="firstname"]').fill('Иван');
