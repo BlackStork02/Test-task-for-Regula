@@ -1,0 +1,12 @@
+{
+  "name": "playwright-tests",
+  "private": true,
+  "devDependencies": {
+    "@playwright/test": "^1.58.2"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui --host 0.0.0.0 --port 9323",
+    "install:browsers": "playwright install --with-deps"
+  }
+}

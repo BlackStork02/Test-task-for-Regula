@@ -1,0 +1,31 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="28.194129">
+<testsuite name="send-registration_form.spec.js" timestamp="2026-02-13T09:44:22.177Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.391" errors="0">
+<testcase name="Face matching: upload photo in Compare › проверка отправки формы регистрации через кнопку Get in Touch" classname="send-registration_form.spec.js" time="13.391">
+<system-out>
+<![CDATA[Баннер не появился за 5 секунд, продолжаем тест без клика
+
+[[ATTACHMENT|test-results/send-registration_form-Fac-2c8ad-и-через-кнопку-Get-in-Touch-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="upload-photo.spec.js" timestamp="2026-02-13T09:44:22.177Z" hostname="chromium" tests="2" failures="0" skipped="0" time="40.464" errors="0">
+<testcase name="Face matching: upload photo in Compare › проверка загрузки фотки в табе Face matching" classname="upload-photo.spec.js" time="14.053">
+<system-out>
+<![CDATA[Баннер не появился за 5 секунд, продолжаем тест без клика
+
+[[ATTACHMENT|test-results/upload-photo-Face-matching-591d9--фотки-в-табе-Face-matching-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Face matching: upload photo in Compare › проверка загрузок одинаковых фоток в табе Face matching" classname="upload-photo.spec.js" time="26.411">
+<system-out>
+<![CDATA[Баннер не появился за 5 секунд, продолжаем тест без клика
+файл не был загружен
+
+[[ATTACHMENT|test-results/upload-photo-Face-matching-a2beb--фоток-в-табе-Face-matching-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
